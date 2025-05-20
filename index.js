@@ -27,6 +27,11 @@ app.post('/registro', authMiddleware, (req, res) => {
   });
 });
 
+app.get('/', (req, res) => {
+  res.send('Register-service funcionando correctamente 🚀');
+});
+
+
 app.listen(process.env.PORT, () => {
   console.log(`Register-service corriendo en puerto ${process.env.PORT}`);
 });
